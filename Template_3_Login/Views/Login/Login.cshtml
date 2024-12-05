@@ -1,0 +1,49 @@
+﻿@{
+Layout = null;
+ViewData["Title"] = "Login Page";
+}
+
+<!-- Lokalt Bootstrap CSS -->
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="~/css/style.css"/>
+
+<!-- Login container -->
+<div class="login-container d-flex justify-content-center align-items-center min-vh-100">
+    <div class="card shadow-lg" style="width: 400px;">
+        <div class="card-body">
+            <h3 class="card-title text-center mb-4">Velkommen</h3>
+
+            <!-- Login Form -->
+            <form method="post" action="#">
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email addresse</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Indtast email" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="password" class="form-label">Kodeord</label>
+                    <input type="password" class="form-control" id="password" name="password" placeholder="Indtast kodeord" required>
+                </div>
+
+                <div class="mb-3 d-flex justify-content-between align-items-center">
+                    <div>
+                        <input type="checkbox" id="rememberMe"> <label for="rememberMe">Husk mig</label>
+                    </div>
+                    <div>
+                        <a href="#" class="text-decoration-none">Glemt kodeord?</a>
+                    </div>
+                </div>
+
+                <div class="d-grid">
+                    <button type="submit" class="btn btn-primary">Login</button>
+                </div>
+            </form>
+
+            <div class="text-center mt-3">
+                <p>Har du ikke en konto? <a href="#" class="text-decoration-none">Opret dig</a></p>
+            </div>
+        </div>
+    </div>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</div>
+
